@@ -1,57 +1,130 @@
-*{
-    padding: 0;
-    margin: 0 ;
-    box-sizing: border-box;
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
-}
-html, body{
-    font-family: 'Roboto', sans-serif;
-}
-.wawe{
-    background-image: url(./wawe-new.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 100vh;
-}
 .container {
-    width: 70%;
+    max-width: 1200px;
+    width: 100%;
+
     margin: 0 auto;
+    padding: 0 15px;
 }
-.nav {
+
+
+.link {
+    color: #FFF;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.6px;
+}
+
+.link:hover {
+    border-bottom: 2px solid #00B2A0;
+}
+
+
+.wawe {
+    background-image: url(./wawe-new.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 25px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
-.logo {
-}
-.link {
-    color: #FFF;
-    font-family: Roboto Condensed;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.6px;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-.link:hover {
-    border-bottom: 1px solid #00B2A0;
-}
-.box{
-    margin: 200px auto;
-    width: max-content;
+.title{
     text-align: center;
+    margin-top: 200px;
+}
+h3{
+    margin-top: 15px;
+}
+.wrap{
+    display: flex;
+    gap: 50px;
+}
+h2{
+    text-align: center;
+    color: #01353E;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+    letter-spacing: 0.6px;
+    margin-bottom: 50px;
+}
+.info{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.box p {
+    color: #242121;
+   
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
+}
+.top{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.start{
+    background: #F8F8F8;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:700px){
 
 }
-.box-text{
-    color: #000;
-    font-family: Roboto Condensed;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.6px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+@media (max-width:700px){
+    h2{
+        font-size: 30px;
+    }
+    .start .wrap{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:500px){
+    .wrap{
+        flex-direction: column;
+    }
 }
