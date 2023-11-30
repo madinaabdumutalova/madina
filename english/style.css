@@ -53,6 +53,7 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    background-position: center;
 }
 
 .nav-link {
@@ -81,7 +82,7 @@ nav .btn{
     
 }
 .hero .btn{
-    margin: 130px auto 0;
+    margin: 120px auto 0;
 }
 
 .hero p{
@@ -109,4 +110,16 @@ font-weight: 400;
 line-height: normal;
 border: 1px solid transparent;
 
+}
+
+@media (max-width: 900px) {
+    .nav-link {
+        display: none;
+    }
+    .hero div {
+        padding-left: 0px;
+    }
+    h1 {
+        font-size: 35px;
+    }
 }
